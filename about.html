@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="icon" type="image/x-icon" href="graduation.png">
+	<meta name="description" content="We have created demo for fullscreen Background Image Slider with auto play functionality. This background slider is purely css without using any javascript." />
+    <meta name="author" content="Codeconvey" />
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="co.css">
+<link rel="stylesheet" type="text/css" href="as1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		
+	
+		.img55{
+			
+			width: 50%;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top:3%
+		}
+		 .autohide{
+    position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+  }
+  .scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+  .headd{
+	position:absolute;left:5%
+}
+@media  (min-width:320px) and (max-width:480px){
+
+.headd{
+left:22%
+}
+}
+.bv{
+background-image:url('all.jpg');
+height:400px;
+background-repeat:no-repeat;width:100%;
+background-size:cover;
+filter:brightness(0.4);
+background-attachment:fixed
+
+}
+.x2{
+
+font-family: 'Pacifico', cursive;color:white;text-align:center;margin-top:3%;
+position:absolute;top:18%;left:18%
+
+}
+.col-mainz {
+  flex: 1;  
+}  
+
+.col-complementaryz {
+  flex: 1;  
+}
+
+/* Responsive: */
+
+@media only screen and (min-width: 640px) {
+  .layoutz {
+    display: flex;
+  }
+}
+
+/* etc */
+
+
+
+.containerz {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:5%
+}
+
+.colz {
+  padding: 1em;
+  margin: 0 2px 2px 0;
+  background:white;
+}
+
+
+/* CSS */
+.button-26 {
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.button-26:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
+.bg-aliceblue{
+	 background-color: white;
+	
+}
+	</style>
+	
+	<script type="text/javascript">
+	  document.addEventListener("DOMContentLoaded", function(){
+	    
+	    el_autohide = document.querySelector('.autohide');
+	    
+	    // add padding-top to bady (if necessary)
+	    navbar_height = document.querySelector('.navbar').offsetHeight;
+	    document.body.style.paddingTop = navbar_height + 'px';
+
+	    if(el_autohide){
+	      
+	      var last_scroll_top = 0;
+	      window.addEventListener('scroll', function() {
+	            let scroll_top = window.scrollY;
+	           if(scroll_top < last_scroll_top) {
+	                el_autohide.classList.remove('scrolled-down');
+	                el_autohide.classList.add('scrolled-up');
+	            }
+	            else {
+	                el_autohide.classList.remove('scrolled-up');
+	                el_autohide.classList.add('scrolled-down');
+	            }
+	            last_scroll_top = scroll_top;
+
+	      }); 
+	      // window.addEventListener
+
+	    }
+	    // if
+	    
+	  }); 
+	</script>
+</head>
+<body>
+ <div class="bqw">   <nav class="autohide navbar navbar-expand-lg navbar-light  bg-aliceblue">
+    
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+           <img src="gra1.png" width="88%">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+       <header class="headd animate-charcter">Choosing University</header>
+          </div>
+        </div>
+      </div>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     <div class="collapse navbar-collapse" id="main_nav">
+   
+     <ul class="navbar-nav ms-auto">
+        
+       <li class="nav-item"><a class="nav-link" href="home.jsp" style="color: blue"> Home </a></li>
+       <li class="nav-item"><a class="nav-link" href="#about"style="color: blue"> About </a></li>
+       
+        <li class="nav-item"><a class="nav-link" href="contact.html" style="color:blue"> Contact </a></li>
+           <li class="nav-item"><a class="nav-link" href="form.jsp"style="color: blue"> FormSubmit </a></li>
+       <form action="explore.jsp" method="post">
+        <li class="nav-item"><a class="nav-link button-22" href="explore.jsp" style="color:white;margin-top: 1%;"> Explore </a></li>
+     
+     </form>
+      </ul>
+   
+     </div> <!-- navbar-collapse.// -->
+    </div> <!-- container-fluid.// -->
+   </nav></div>
+
+<div class="bv">
+
+
+</div>
+<h2  class="x2 animated fadeInLeft">Choosing University By Total Mark</h2>
+<div class="containerz">
+  
+  <div class="layoutz">
+    <p class="colz col-mainz animated fadeInLeft" style="margin-top:5%">
+      <strong style="margin-top:666625%">About Us</strong><br> 
+This page was written as a school proposal in 2022. It was written by four second-year students majoring in computer science at the University of Computer Studies(Thaton). This project is mainly selected for students
+ who will be admitted to the university.<br><br>
+<a href="home.jsp">
+ <button class="button-26" role="button">Back to Home</button>
+</a>
+    </p>
+    <p class="colz col-complementaryz" role="complementary">
+<img src="all.jpg" style="width:100%">
+    </p>  
+  </div>   
+
+
+
+</div>
+
+
+</body>
+</html>

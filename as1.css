@@ -1,0 +1,323 @@
+@charset "ISO-8859-1";
+
+
+
+.bordere{
+
+    border: 1px solid white;
+    width: 100%;
+    color: white;
+    margin-top: 23%;
+    height: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color:#0492C2 ;
+}
+@media (max-width: 320px) {
+    .bordere{
+        margin-top: 200%;
+    }
+}
+@media (max-width: 480px) {
+    .bordere{
+        margin-top:130%;
+        height: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px)
+    {
+        .bordere{
+            margin-top: 50%;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 414px)
+    {
+        .bordere{
+            margin-top: 160%;
+        }
+    }
+    body{behavior: smooth;}
+.cs{
+margin-top:40% ;
+}
+@media (max-width: 480px) {
+    .cs{
+        margin-top: 45%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .cs{
+        margin-top: 10%;
+    }
+
+}@media (min-width: 768px) and (max-width: 1024px){
+    .ribbon{
+
+display: none;
+    }}
+
+@media (max-width: 480px){
+    .ribbon{
+     display: none;
+    }
+}
+.ribbon {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+   
+    width: 22%;
+       
+    position:absolute;
+    background: red;
+    color: #fff;
+    text-align: center;
+   /* Adjust to suit */
+    margin: 2em auto 3em;
+    height: 45px; 
+    top: 2%;
+ padding: 2px;
+    left: 0%;
+    border-radius: 5px;/* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+   }
+   
+  
+   .col-main6 {
+    flex: 1;  
+  }  
+  
+  .col-complementary6 {
+    flex: 1;  
+  }
+  
+  /* Responsive: */
+  
+  @media only screen and (min-width: 640px) {
+    .layout6 {
+      display: flex;
+    }
+  }
+  
+  /* etc */
+ 
+  .container6 {
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+  }
+  
+  .col6 {
+    padding: 1em;
+    margin: 0 2px 2px 0;
+
+  }
+
+
+
+/* CSS */
+.button-38 {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-38:hover {
+  background-color: rgb(249,250,251);
+}
+
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button-38:focus-visible {
+  box-shadow: none;
+}
+.col-four1 {
+    width: 22%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.col-four1:last-child {
+    margin-right: 0;
+}
+
+.clear {
+    clear: both;
+}
+  .card-title{
+    color: black;
+  }
+  .card-text{
+    color: black;
+    font-size: 14px;
+  }
+  @media screen and (max-width : 1024px) {
+    .col-four1 {
+		width: 50%;
+		float: left;
+		margin-right: 0;
+		padding: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+	}
+}
+@media screen and (max-width : 767px) {
+    .col-four1{
+		width: 100%;
+		float: none;
+		padding: 15px 0;  display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+	}
+}
+@media (max-width: 480px){
+    .col-four1 {
+		width:100%;
+		float: left;
+		margin-right: 0;
+		padding: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+	}
+}
+.columnsd1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.columne1 {
+	flex: 1;
+	border: 1px solid white;
+	margin: 2px;
+	padding: 10px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color:#0492C2;color:white;
+    border-radius: 5px;
+	
+	
+}
+
+
+
+
+
+@media screen and (max-width: 980px) {
+  .columnsd1 .columne1 {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+   
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columnsd1 .columne1 {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+.counter {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 1.5%;
+  font-size: 50px;
+  background-color: #f4f4f4;
+  color: #499f68;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  vertical-align: middle;
+  margin-top:5%
+}
+.container11 {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content:center;
+  margin-top:3rem;
+}
+
+
+.carousel-multi-item.v-2.product-carousel .carousel-item-right.active,
+.carousel-multi-item.v-2.product-carousel .carousel-item-next {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%); }
+.carousel-multi-item.v-2.product-carousel .carousel-item-left.active,
+.carousel-multi-item.v-2.product-carousel .carousel-item-prev {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%); }
+.carousel-multi-item.v-2.product-carousel .carousel-item-right,
+.carousel-multi-item.v-2.product-carousel .carousel-item-left {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
+@media (min-width: 768px){
+.carousel-multi-item.v-2.product-carousel .carousel-item-right.active,
+.carousel-multi-item.v-2.product-carousel .carousel-item-next {
+  -webkit-transform: translateX(16.6667%);
+  -ms-transform: translateX(16.6667%);
+  transform: translateX(16.6667%); }
+.carousel-multi-item.v-2.product-carousel .carousel-item-left.active,
+.carousel-multi-item.v-2.product-carousel .carousel-item-prev {
+  -webkit-transform: translateX(-16.6667%);
+  -ms-transform: translateX(-16.6667%);
+  transform: translateX(-16.6667%); }
+.carousel-multi-item.v-2.product-carousel .carousel-item-right,
+.carousel-multi-item.v-2.product-carousel .carousel-item-left {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+}
+.img23 {
+  max-width: 100%;
+}
+
+.siema {
+  margin: 1rem 0;
+}
+
+.siema-container {
+  position: relative;
+}
+.bodf{
+  overflow-x: hidden;
+  
+  }
+.prev, .next {
+  position: absolute;
+  top: 50%;
+}
+.prev {
+  left: -10px;
+}
+.next {
+  right: -10px;
+}
